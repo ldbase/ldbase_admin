@@ -1,0 +1,15 @@
+{
+  "name": "ldbase/ldbase_admin",
+  "description": "A module that provides an admin form for LDbase.",
+  "type": "drupal-module",
+  "keywords": ["Drupal"],
+  "homepage": "https://github.com/ldbase/ldbase_admin",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Bryan J. Brown",
+      "email": "bjbrown@fsu.edu",
+      "role": "Maintainer"
+    }
+  ]
+}

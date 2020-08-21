@@ -1,0 +1,4 @@
+administer ldbase settings:
+  title: 'Administer LDbase settings'
+  description: 'Access and manage configuration for LDbase'
+  restrict access: TRUE
