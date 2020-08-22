@@ -1,4 +1,4 @@
-ldbase.settings:
+ldbase_admin.settings:
   path: '/admin/config/system/ldbase/settings'
   defaults:
     _form: '\Drupal\ldbase_admin\Form\LdbaseAdminForm'

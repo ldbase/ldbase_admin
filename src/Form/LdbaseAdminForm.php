@@ -13,14 +13,14 @@ class LdbaseAdminForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function getFormId() {
-    return 'ldbase_settings';
+    return 'ldbase_admin_settings';
   }
 
   /**
    * {@inheritdoc}
    */
   protected function getEditableConfigNames() {
-    return ['ldbase.settings'];
+    return ['ldbase_admin.settings'];
   }
 
   /**
@@ -28,7 +28,7 @@ class LdbaseAdminForm extends ConfigFormBase {
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
     $form = parent::buildForm($form, $form_state);
-    $config = $this->config('ldbase.settings');
+    $config = $this->config('ldbase_admin.settings');
 
     $form['ldbase_matomo_user_token'] = [
       '#type' => 'textfield',
@@ -44,7 +44,7 @@ class LdbaseAdminForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    $config = $this->config('ldbase.settings');
+    $config = $this->config('ldbase_admin.settings');
     $config->set('ldbase_matomo_user_token', $form_state->getValue('ldbase_matomo_user_token'));
     $config->save();
     parent::submitForm($form, $form_state);

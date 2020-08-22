@@ -1,5 +1,5 @@
-system.ldbase_settings:
+system.ldbase_admin_settings:
   title: 'LDbase'
   parent: system.admin_config_system
-  route_name: ldbase.settings
+  route_name: ldbase_admin.settings
   description: 'Configure LDbase settings.'
